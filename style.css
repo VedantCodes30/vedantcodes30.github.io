@@ -1,0 +1,10 @@
+.text {
+    color:azure;
+    box-shadow: 5px;
+    border-style: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp7125137.jpg) 
+  }
