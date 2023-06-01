@@ -8,3 +8,14 @@
 body {
     background-image: url(https://wallpapercave.com/wp/wp7125137.jpg) 
   }
+
+  header {
+    stroke: black;
+    color:#ffffff;
+    text-align: center;
+  }
+
+  footer {
+    color:azure;
+    text-align: bottom;
+  }
