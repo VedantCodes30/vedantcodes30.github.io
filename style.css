@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(https://wallpapercave.com/wp/wp7125137.jpg) 
+  background: linear-gradient(to bottom, #FF0000, #000000, #808080); 
   }
 
   header {
