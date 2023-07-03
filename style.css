@@ -24,3 +24,7 @@ body {
 .frame {
     padding: 20px;
 }
+
+a {
+  color: bisque;
+}
