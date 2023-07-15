@@ -70,39 +70,6 @@ body {
 
 }
 
-/*#visual {
-  margin: 0%;
-  padding: 0%;
-  background-repeat: no-repeat;
-}
-*/
-header {
-  stroke: black;
-  color: #ffffff;
-  text-align: center;
-}
-
 footer {
-  color: azure;
-  text-align: center;
-}
-
-.frame {
-  display: block;
-  margin: 30px;
-  padding: 0px;
-  border: 3px solid gainsboro;
-}
-
-a {
-  color: #1D3761;
-}
-
-a:after {
-  color: rgb(225, 164, 65);
-}
-
-a:hover {
-  cursor: pointer;
-  color: blue;
+  align-items: center;
 }
