@@ -1,30 +1,108 @@
-.text {
-    text-align: center;
-    color:azure;
-    box-shadow: 5px;
-    border-style: inherit;
-    font-family:'monospace', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
+  margin: 0%;
+  padding: 0%;
+  font-family: monospace, Tahoma, Geneva, Verdana, sans-serif;
+  color: #e8e8e8; 
 }
 
+.text {
+  text-align: center;
+  color: #e8e8e8;
+  box-shadow: 5px;
+  border-style: inherit;
+  ;
+}
+
+.hero {
+  position:sticky;
+  border: slategray;
+  padding: 20px;
+  text-align: center;
+}
+button {
+  color: hsl(0.59,97.14%,58.82%);
+  padding: 10px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  content: attr(data-tooltip);
+}
+
+button:hover {
+  color: hsl(0.59,97.14%,20%);
+  cursor: pointer;
+  filter: hue-rotate();
+}
+
+button::after {
+  padding: 5px;
+}
+
+button:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+button::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px; /* Adjust the positioning of the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+
 body {
-    background-color:black; 
-  }
+  background: url('mesh-gradient.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: block;
+  z-index: auto;
+  overflow: hidden;
 
-  header {
-    stroke: black;
-    color:#ffffff;
-    text-align: center;
-  }
+}
 
-  footer {
-    color:azure;
-    text-align: center;
-  }
+/*#visual {
+  margin: 0%;
+  padding: 0%;
+  background-repeat: no-repeat;
+}
+*/
+header {
+  stroke: black;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer {
+  color: azure;
+  text-align: center;
+}
 
 .frame {
-    padding: 20px;
+  display: block;
+  margin: 30px;
+  padding: 0px;
+  border: 3px solid gainsboro;
 }
 
 a {
-  color: bisque;
+  color: #1D3761;
+}
+
+a:after {
+  color: rgb(225, 164, 65);
+}
+
+a:hover {
+  cursor: pointer;
+  color: blue;
 }
