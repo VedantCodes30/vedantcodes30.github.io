@@ -75,7 +75,14 @@ footer {
 }
 
 .rect {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  padding: 16px 24px 24px 24px ;
+  display: block;
+  background-color: rgb(104,140,233);
+  border-radius: 10%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-style: solid;
+  margin-top: 50%auto;
+  margin-bottom: 50px;
+  padding: 20px 50px 50px 20px ;
+
 }
