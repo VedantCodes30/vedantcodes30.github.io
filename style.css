@@ -14,9 +14,7 @@ html, body {
 }
 
 .hero {
-  position:sticky;
   border: slategray;
-  padding: 20px;
   text-align: center;
 }
 button {
