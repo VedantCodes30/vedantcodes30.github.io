@@ -73,7 +73,7 @@ footer {
 }
 
 .rect {
-  display: block;
+  display: flex;
   background-color: rgb(104,140,233);
   border-radius: 10%;
   border-top-left-radius: 16px;
