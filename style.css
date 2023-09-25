@@ -56,16 +56,18 @@ button::before {
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-
 body {
   background: url('mesh-gradient.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
-  display: block;
-  z-index: auto;
-  overflow: hidden;
-
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
