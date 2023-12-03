@@ -56,7 +56,7 @@ h1:hover {
   color: rgb(179, 179, 179);
   cursor: default;
   animation-duration: 3s;
-  animation-name: fade-in, fade-out;
+  animation-name: fade-in;
 }
 
 @keyframes fade-in {
