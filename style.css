@@ -14,7 +14,9 @@ body {
 }
 
 body {
-  background: hsl(0, 0%, 8%);
+  /* background: hsl(0, 0%, 8%); */
+  background: linear-gradient(135deg, rgb(17, 17, 225), rgb(211, 142, 15))
+    no-repeat;
   color: #ffffff;
   display: grid;
   place-items: center;
@@ -28,7 +30,9 @@ img {
 }
 
 .container {
-  background-color: #1f1f1f;
+  /* background: #1f1f1f; */
+  background: linear-gradient(transparent, rgb(79, 79, 79));
+
   width: 350px;
   height: 550px;
   border-radius: 5px;
@@ -58,9 +62,10 @@ p {
 }
 
 a {
+  width: 100%;
   font-weight: 600;
   text-decoration: none;
-  color: honeydew;
+  color: rgb(255, 244, 244);
 }
 ul,
 li {
@@ -75,5 +80,5 @@ li {
 
 ul > li:hover {
   color: #1f1f1f;
-  background-color: hsl(74, 98%, 34%);
+  background-color: orange;
 }
