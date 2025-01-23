@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+body {
+  background: grey;
+}
+
 a {
   max-width: 100%;
 }
@@ -22,10 +26,10 @@ a {
 }
 
 body {
-  /* background: hsl(0, 0%, 8%); */
-  background: linear-gradient(135deg, rgb(17, 17, 225), rgb(211, 142, 15))
-    no-repeat;
-  color: #ffffff;
+  background: hsl(0, 0%, 100%);
+  /* background: linear-gradient(135deg, rgb(17, 17, 225), rgb(211, 142, 15))
+    no-repeat; */
+  /* color: #ffffff; */
   display: grid;
   place-items: center;
   transition: background 500ms ease-in-out;
@@ -53,7 +57,6 @@ img {
 .container {
   background: #1f1f1f;
   background: linear-gradient(transparent, rgb(79, 79, 79));
-
   width: 350px;
   height: 550px;
   border-radius: 5px;
