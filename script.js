@@ -12,6 +12,8 @@ function toggleTheme() {
   }
 }
 
+console.log("Hello");
+
 // Check if theme preference is saved in local storage
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {

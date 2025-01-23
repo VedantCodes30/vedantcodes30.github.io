@@ -27,9 +27,8 @@ a {
 
 body {
   background: hsl(0, 0%, 100%);
-  /* background: linear-gradient(135deg, rgb(17, 17, 225), rgb(211, 142, 15))
-    no-repeat; */
-  /* color: #ffffff; */
+
+  color: #ffffff;
   display: grid;
   place-items: center;
   transition: background 500ms ease-in-out;
