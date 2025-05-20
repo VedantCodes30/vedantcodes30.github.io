@@ -1,24 +1,20 @@
-const btn = document.querySelector(".themeBtn");
+const items = [
+  {
+    name: "GitHub",
+    href: "https://github.com/vedantcodes30",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://linkedin.com/vedantkale",
+  },
+];
 
-// Function to toggle theme
-function toggleTheme() {
-  document.body.classList.toggle("dark");
-  if (document.body.classList.contains("dark")) {
-    btn.textContent = "White";
-    localStorage.setItem("theme", "dark");
-  } else {
-    btn.textContent = "Dark";
-    localStorage.setItem("theme", "light");
-  }
-}
+const card = document.querySelectorAll("card");
 
-console.log("Hello");
+items.map((item) => {
+  const list = document.createElement("li");
+  list.textContent = items.name;
+  console.log(list);
+});
 
-// Check if theme preference is saved in local storage
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  toggleTheme(); // Apply dark theme
-}
-
-// Event listener for button click
-btn.addEventListener("click", toggleTheme);
+document.body.append(items.name);
