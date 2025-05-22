@@ -1,3 +1,3 @@
-**Hello!**
+### A Simple page to see new and native css and html features in action
 
-This page is just the collection of my personal social media links
+This will include css carosel, scroll driven transitions, view transitions, popover api, dialog, accordian and many more...
