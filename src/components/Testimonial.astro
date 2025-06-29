@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/Icons/logo.svg";
+---
+
+<section>
+  <div class="container">
+    <h1>Testimonial</h1>
+    <p>
+      "TrailHive has completely changed the way I explore the outdoors. The
+      personalized trail recommendations and virtual challenges have kept me
+      motivated and engaged with my adventures."
+    </p>
+    <span>-John.R</span>
+    <div class="logo">
+      <p>Trusted by teams at over 1,000 of the world’s leading organizations</p>
+      <div class="logo-container">
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+        <Image src={logo} alt="dell logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: url("../assets/Images/test.png");
+    height: 100dvh;
+    background-size: contain;
+    margin-top: 2rem;
+  }
+
+  h1,
+  p,
+  span {
+    color: var(--text-light);
+  }
+
+  .logo {
+    border: 1px solid red;
+  }
+
+  .container {
+    gap: 1rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    justify-content: left;
+    height: 100dvh;
+    /* background: var(--bg-dark); */
+  }
+</style>

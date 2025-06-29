@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+import hero from "../assets/Images/hero-img.png";
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Your Ultimate Outdoor Companion</h1>
+      <p>
+        Are you tired of spending hours searching for the perfect hiking or
+        biking trail? TrailHive - the ultimate outdoor adventure app that
+        connects you with the best trails in your area.
+      </p>
+      <button>Download the app</button>
+    </div>
+    <Image
+      src={hero}
+      alt=" hero section"
+      loading={"eager"}
+      height="400"
+      width="400"
+    />
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 5rem;
+    height: 100dvh;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-light);
+  }
+
+  p {
+    color: var(--text-light);
+    line-height: 160%;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  img {
+    object-fit: contain;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    gap: 8rem;
+  }
+
+  .hero-text {
+    max-width: 42.3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  button {
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    background: var(--bg-light);
+    max-width: fit-content;
+    cursor: pointer;
+  }
+</style>
