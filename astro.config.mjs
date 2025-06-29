@@ -4,5 +4,5 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   site: "https://vedantcodes30.github.io",
-  base: "vedant.github.io",
+  base: "vedantcodes30.github.io",
 });
