@@ -12,7 +12,25 @@
       rel="stylesheet"
     />
     <title>Vedant Codes</title>
-    <link rel="stylesheet" href="./src/styles/global.css" />
+    <style is:global>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg-light: #d9efde;
+        --bg-dark: #232e26;
+        --text-light: #d9efde;
+        --text-dark: #232e26;
+      }
+
+      body {
+        font-family: Lato;
+        background: var(--bg-dark);
+      }
+    </style>
   </head>
   <body>
     <slot />
