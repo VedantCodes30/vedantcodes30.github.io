@@ -15,6 +15,7 @@ import hero from "../assets/Images/hero-img.png";
       <button>Download the app</button>
     </div>
     <Image
+      id="image"
       src={hero}
       alt=" hero section"
       loading={"eager"}
@@ -31,7 +32,7 @@ import hero from "../assets/Images/hero-img.png";
     align-items: flex-start;
     justify-content: left;
     padding: 5rem;
-    height: 100dvh;
+    position: relative;
   }
 
   h1 {
@@ -50,17 +51,21 @@ import hero from "../assets/Images/hero-img.png";
   img {
     object-fit: contain;
   }
+
   .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
     gap: 8rem;
+    min-height: 70dvh;
   }
 
   .hero-text {
+    background: #d9efde35;
+    border-radius: 25px;
     max-width: 42.3rem;
-    padding: 1rem;
+    padding: 1.1rem;
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
@@ -74,5 +79,12 @@ import hero from "../assets/Images/hero-img.png";
     background: var(--bg-light);
     max-width: fit-content;
     cursor: pointer;
+  }
+
+  @media (max-width: 786px) {
+    .hero-content {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 </style>

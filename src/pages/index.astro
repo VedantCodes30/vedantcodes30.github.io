@@ -9,8 +9,16 @@ import Testimonial from "../components/Testimonial.astro";
 
 <Layout>
   <Navbar />
-  <Hero />
-  <Card />
-  <Testimonial />
-  <Footer />
+  <div class="content">
+    <Hero />
+    <Card />
+    <Testimonial />
+    <Footer />
+  </div>
 </Layout>
+
+<style>
+  .content {
+    padding-top: 5rem;
+  }
+</style>
