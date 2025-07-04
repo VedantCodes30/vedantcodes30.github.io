@@ -28,7 +28,7 @@ const card = [
     <div class="feat">
       <p>FEATURES</p>
       <h2>Stay Active and Healthy</h2>
-      <button>Learn More</button>
+      <button><a href="/features">Learn More</a></button>
     </div>
     <div class="cards">
       {
@@ -46,8 +46,8 @@ const card = [
 
 <style>
   section {
-    position: inherit;
     padding: 4rem 1.5rem;
+    padding-top: 8rem;
     background: var(--bg-light);
     border-radius: 40px;
   }
@@ -90,6 +90,10 @@ const card = [
       color: var(--text-light);
       font-size: 1rem;
       background: var(--bg-dark);
+      a {
+        text-decoration: none;
+        color: var(--text-light);
+      }
     }
   }
   h1,

@@ -3,15 +3,17 @@ import { Image } from "astro:assets";
 import logo from "../assets/Icons/Logo.svg";
 ---
 
-<section>
+<section id="testimonial">
   <div class="container">
-    <h1>Testimonial</h1>
-    <p>
-      "TrailHive has completely changed the way I explore the outdoors. The
-      personalized trail recommendations and virtual challenges have kept me
-      motivated and engaged with my adventures."
-    </p>
-    <span>-John.R</span>
+    <div class="quote">
+      <h1>Testimonial</h1>
+      <p>
+        "TrailHive has completely changed the way I explore the outdoors. The
+        personalized trail recommendations and virtual challenges have kept me
+        motivated and engaged with my adventures."
+      </p>
+      <span>-John.R</span>
+    </div>
     <div class="logo">
       <p>Trusted by teams at over 1,000 of the world’s leading organizations</p>
       <div class="logo-container">
@@ -29,30 +31,68 @@ import logo from "../assets/Icons/Logo.svg";
 </section>
 
 <style>
-  section {
-    height: 100dvh;
-    background-size: contain;
-    margin-top: 2rem;
-  }
-
   h1,
   p,
   span {
     color: var(--text-light);
   }
 
-  .logo {
-    border: 1px solid red;
+  section {
+    background-image: url("../assets/Images/test.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    justify-content: center;
   }
 
   .container {
-    gap: 1rem;
-    border-radius: 50px;
+    gap: 8.25rem;
+
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem 2rem;
+    flex-direction: column;
+    max-width: 49.125rem;
+  }
+
+  .quote {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 2rem;
-    justify-content: left;
-    height: 100dvh;
+    gap: 1rem;
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 150%;
+      font-weight: 400;
+      font-size: 0.875rem;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 3.3rem; /* 52.8px */
+    }
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    p {
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 130%;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 </style>

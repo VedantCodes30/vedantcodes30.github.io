@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import heroImg from "../assets/Images/hero-stack.jpg";
+---
+
+<section id="hero-stack">
+  <div class="container">
+    <div class="title-section">
+      <h2>Find new trails to explore and adventures to embark on.</h2>
+    </div>
+    <div class="image-wrapper">
+      <Image src={heroImg} alt="Guy Hiking on mountain" />
+    </div>
+  </div>
+</section>
+
+<style>
+  #hero-stack {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding: 4rem 1.25rem 1.25rem 1.25rem;
+    gap: 5rem;
+    background: var(--bg-light);
+    border-radius: 40px;
+    min-height: 100dvh;
+  }
+
+  img {
+    width: 100%;
+    max-height: 43.75rem;
+    border-radius: 24px;
+    object-fit: scale-down;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .title-section {
+    h2 {
+      color: var(--text-dark);
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 120%;
+    }
+  }
+</style>
